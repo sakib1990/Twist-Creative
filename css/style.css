@@ -180,6 +180,14 @@ background: #444;
 	opacity: 1;
 }
 
+.d-table {
+    height: 100%;
+    width: 100%;
+}
+.d-table-cell {
+    vertical-align: middle;
+}
+
 .btn {
 	text-align: center;
 	white-space: nowrap;
@@ -757,38 +765,6 @@ top: -9px;
 	font-size: 16px;
 	color: #777;
 }
-
-
-
-.tile-gallery {
-    position: relative;
-}
-
-.tile-gallery img {
-	border-radius: 5px;
-	box-shadow: 0px 8px 15px 0px rgb( 0, 0, 0 );
-}
-
-.tile-gallery img:nth-child(2) {
-	position: absolute;
-	top: 27px;
-	left: 237px;
-}
-
-.tile-gallery img:nth-child(3) {
-	position: absolute;
-	top: 322px;
-	left: 28px;
-}
-
-
-.services-section {
-	background-image: url(../service-img.jpeg);
-	background-repeat: no-repeat;
-	width: 55%;
-	height: 700px;
-}
-
 
 
 
@@ -2186,4 +2162,102 @@ span {
 .cart-total-price span {
 	float: right;
 	font-weight: 500;
+}
+
+
+/* Twist */
+
+
+/* tile-gallery */
+
+.tile-gallery {
+	position: relative;
+	height: 650px;
+}
+
+.tile-gallery img {
+	border-radius: 5px;
+	box-shadow: 0px 8px 15px 0px rgb( 0, 0, 0 );
+}
+
+.tile-gallery img:nth-child(2) {
+	position: absolute;
+	top: 27px;
+	left: 237px;
+}
+
+.tile-gallery img:nth-child(3) {
+	position: absolute;
+	top: 322px;
+	left: 28px;
+}
+
+/* digital-section */
+.digital-section {
+	position: relative;
+
+}
+.digital-section::before{
+	position: absolute;
+	content:"";
+	height: 100%;
+	width: 50%;
+	top: 0;
+	left: 0;
+	background-image: url(../service-img.jpeg);
+	background-repeat: no-repeat;
+}
+.digital-icon i {
+	height: 100px;
+	width: 5%;
+	float: left;
+	color: #85dde0;
+
+}
+.digital-icon p {
+	font-size: 14px;
+	color: #888888;
+}
+.digital-icon h4 {
+	font-size: 18px;
+	color: #373737;
+}
+
+/* portfolio-area */
+.port-4 img {
+	box-shadow: 0px 8px 15px 0px rgb( 0, 0, 0 );
+	height: 100%;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.port-5 img {
+	box-shadow: 0px 8px 15px 0px rgb( 0, 0, 0 );
+	height: 100%;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.view-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .40);
+    width: 0%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+.single-portfolio-item:hover .view-link {
+    opacity: 1;
+    width: 100%;
+}
+.view-link a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+}
+.single-portfolio-item {
+	position: relative;
 }
